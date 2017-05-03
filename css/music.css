@@ -1,0 +1,164 @@
+html, body {
+    font-family: Helvetica;
+    height: 100%;
+    width: 100%;
+    background-color: #eeeeee
+}
+
+a, img, button, input, textarea {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+input, textarea {
+    -webkit-appearance: none;
+}
+
+.wrap {
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+.dot {
+    width: 28px;
+    height: 10px;
+    margin: 20px auto
+}
+
+.dot span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.8
+}
+
+.round {
+    z-index: 100;
+    position: relative;
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+    background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1493558854081&di=dc4dd60d9a6ae2d146d1832e6451f6ff&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2F2c34816eddc451daddb72305b6fd5266d21632ff.jpg') no-repeat center;
+    border-radius: 50%;
+    background-size: 100% auto;
+    margin: 15% auto;
+    border: 7px solid #8da3ff;
+    box-shadow: 5px;
+}
+
+#songshowgeci {
+    position: relative;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 18px;
+    height: 30%;
+    color: #333333;
+    overflow: scroll;
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#songshowgeci ul {
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#songshowgeci li {
+    transition: 0.3s;
+    line-height: 55px;
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
+#play {
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.gaoliang {
+    color: #fff;
+}
+
+.black {
+    color: #333;
+}
+
+.animateround {
+    -webkit-animation: circle 10s infinite linear;
+    -o-animation: circle 10s infinite linear;
+    animation: circle 10s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes circle /* Firefox */
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes circle /* Safari 和 Chrome */
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes circle /* Opera */
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
