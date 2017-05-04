@@ -49,6 +49,11 @@ input, textarea {
     margin: 15% auto;
     border: 7px solid #8da3ff;
     box-shadow: 5px;
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 #songshowgeci {
@@ -115,50 +120,10 @@ input, textarea {
     color: #333;
 }
 
-.animateround {
-    -webkit-animation: circle 10s infinite linear;
-    -o-animation: circle 10s infinite linear;
-    animation: circle 10s infinite linear;
-    -webkit-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-@keyframes circle {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@-moz-keyframes circle /* Firefox */
-{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes circle /* Safari 和 Chrome */
-{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@-o-keyframes circle /* Opera */
-{
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.gpu{
+    webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
 }
